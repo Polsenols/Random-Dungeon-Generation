@@ -15,9 +15,8 @@ steps:
 
 - task: SonarQubePrepare@4
   inputs:
-    scannerMode: 'MSBuild'
-    projectKey: 'sonarboy'
-    projectName: 'sonarboy'
+    SonarQube: 'sonarqube'
+    scannerMode: 'Other'
 - task: SonarQubeAnalyze@4
 
 - script: |
