@@ -13,7 +13,10 @@ steps:
 - script: echo Hello, world!
   displayName: 'Run a one-line script'
 
-
+- task: SonarQubePrepare@4
+  inputs:
+    scannerMode: 'CLI'
+    configMode: 'file'
 - task: SonarQubeAnalyze@4
 
 - script: |
