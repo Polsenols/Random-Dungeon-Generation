@@ -15,11 +15,9 @@ steps:
 
 - task: SonarQubePrepare@4
   inputs:
-    scannerMode: 'CLI'
-    configMode: 'manual'
-    cliProjectKey: 'sonartest'
-    cliProjectName: 'test'
-    cliSources: '.'
+    scannerMode: 'MSBuild'
+    projectKey: 'sonarboy'
+    projectName: 'sonarboy'
 - task: SonarQubeAnalyze@4
 
 - script: |
