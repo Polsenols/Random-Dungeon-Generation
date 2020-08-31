@@ -16,7 +16,10 @@ steps:
 - task: SonarQubePrepare@4
   inputs:
     scannerMode: 'CLI'
-    configMode: 'file'
+    configMode: 'manual'
+    cliProjectKey: 'sonartest'
+    cliProjectName: 'test'
+    cliSources: '.'
 - task: SonarQubeAnalyze@4
 
 - script: |
